@@ -974,6 +974,17 @@ p{
     .accordion .container.active .content p{
         height: 10rem;
     }
+    
+    .contact_us{
+        width: 100%;
+    }
+    .contact_us_container{
+        width: 80%;
+    }
+    .contact_us h1{
+        font-size: 1.75rem;
+        font-weight: 400;
+    }
 }
 
 @media (max-width:840px){
@@ -990,8 +1001,18 @@ p{
     .accordion {
         width: 100%;
     }
+    .contact_us{
+        width: 100%;
+    }
+    .contact_us_container{
+        width: 80%;
+    }
+    .contact_us h1{
+        font-size: 1.75rem;
+        font-weight: 400;
+    }
 }
-@media (max-width:425px){
+@media (max-width:550px){
     .navbar .links{
         display: none;
     }
