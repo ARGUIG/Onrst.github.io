@@ -56,7 +56,7 @@ body{
 /*HEADER*/
 header{
     color: var(--white);
-    background-image: url('AdobeStock_413702999.jpeg');
+    background-image: url('AdobeStock_413702999.webp');
     background-size:cover;
     height: fit-content;
     background-attachment:fixed;
