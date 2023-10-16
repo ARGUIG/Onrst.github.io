@@ -355,6 +355,7 @@ section{
     margin: auto;
     margin-top: 0.8rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-around;
 }
 
@@ -475,6 +476,15 @@ section{
 }
 
 @media (max-width:840px){
+    .coontact h3{
+        font-size: 1.2rem;
+    }
+    .wrapper{
+        width: 100%;
+    }
+    .wrapper .flex{
+        width: 95%;
+    }
 }
 @media (max-width:550px){
     .navbar .links{
@@ -522,6 +532,9 @@ section{
     font-size: 1.5rem;
     line-height: 32px;
     letter-spacing: .12px;
+    }
+    .wrapper .coontact h3{
+        font-size: 1rem;
     }
 }
 
