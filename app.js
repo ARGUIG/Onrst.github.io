@@ -41,3 +41,4 @@ document.addEventListener('scroll',()=>{
         navbar.classList.remove('scrolled');
     }
 });
+

@@ -19,6 +19,9 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"> 
         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
         
+
+        
+
         <link rel="icon" href="loog.webp">
         <title>Moroccan Blockchain Lab</title>
     </head>
@@ -329,7 +332,7 @@
                 <div class="contact_us top60px" id="contact">
                     <div class="contact_us_container">
                         <div class="contact_us_header"><h1>Get In Touch !</h1></div>
-                        <form method="post" action="mailto:amine.arguig@enim.ac.ma">
+                        <form onsubmit="emailSend(); reset(); return false;">
                             <fieldset>
                                 <div><label for="full_name"><input id="full_name" required type="text" placeholder="Your Full Name"/></label></div>
                                 <div><label for="mail"><input id="mail" required type="text" placeholder="Email"/></label></div>
@@ -380,7 +383,10 @@
             </div>
         </footer>
         
-        
-        <script src="app.js" type="text/javascript"></script>
+        <!-- for sendEmail -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <!-- 
+        <script src="app.js" type="text/javascript"></script> -->
+        <script src="emailSend.js"></script>
     </body>
 </html>
