@@ -19,16 +19,6 @@ toggleBtn.onclick=function(){
         navbar.classList.add('scrolled');
 }
 
-var aftr =document.querySelector("#aftr");
-
-aftr.onclick =function(){
-    if (dropDownMenu.style.display !== 'none') {
-      dropDownMenu.classList.toggle('open');
-    }
-    else {
-      dropDownMenu.classList.toggle('close');
-    }
-}
 
 
 
