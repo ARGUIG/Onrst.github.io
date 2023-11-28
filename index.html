@@ -332,7 +332,7 @@
                 <div class="contact_us top60px" id="contact">
                     <div class="contact_us_container">
                         <div class="contact_us_header"><h1>Get In Touch !</h1></div>
-                        <form onsubmit="emailSend(); reset(); return false;">
+                        <form onsubmit="sendEmail(); reset(); return false;">
                             <fieldset>
                                 <div><label for="full_name"><input id="full_name" required type="text" placeholder="Your Full Name"/></label></div>
                                 <div><label for="mail"><input id="mail" required type="text" placeholder="Email"/></label></div>
@@ -385,8 +385,21 @@
         
         <!-- for sendEmail -->
         <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <!-- 
-        <script src="app.js" type="text/javascript"></script> -->
-        <script src="emailSend.js"></script>
+        <script src="app.js" type="text/javascript"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "aminearguig07@gmail.com",
+                    Password : "26A4863F954D7EA867A882226854AF3B5080",
+                    To : 'aminearguig07@gmail.com',
+                    From : document.getElementById("mail").value,
+                    Subject : "This is the subject",
+                    Body : "And this is the body"
+                  }).then(
+                    message => alert(message)
+                  );
+            }
+        </script>
     </body>
 </html>
